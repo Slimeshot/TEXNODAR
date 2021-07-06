@@ -1,0 +1,108 @@
+.system {
+    padding: 120px 0;
+    background-color: #FAF9F5;
+}
+.system__content {
+    display: flex;
+}
+.system__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+.system__title {
+}
+.system__group {
+}
+.system__subtitle {
+    font-family: 'IBM', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #7D7D7D;
+    margin-bottom: 32px;
+}
+
+.system__btn {
+    background-color: $accent;
+    color: #fff;
+    padding: 17px 34px;
+    border-radius: 24px 8px;
+}
+.system__info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+.system__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 32px;
+    border: 1px solid #E5E5E5;
+    &:nth-child(3) {
+        .system__block-img {
+            width: 155px;
+            height: 200px;
+        }
+    }
+    
+}
+.system__block-1 {
+}
+.system__block-img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: auto;     
+      object-fit: cover;  
+    }
+}
+.system__block-title {
+    font-family: 'Normalidad', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.system__block-level {
+    display: block;
+    font-family: 'IBM', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #7D7D7D;
+    padding: 8px 16px;
+    border: 1px solid #7D7D7D;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+.system__block-menu {
+}
+.system__block-list {
+    font-family: 'IBM', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #979797;
+    margin-bottom: 16px;
+
+}
+

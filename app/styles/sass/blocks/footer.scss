@@ -1,0 +1,107 @@
+.footer {
+    padding: 32px;
+    background-color: #FAF9F5;
+}
+
+.footer__content {
+}
+.footer__top {
+    display: flex;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 5;
+}
+.footer__logo {
+}
+.footer__social {
+    width: 150px;
+    justify-content: space-between;
+    display: flex;
+}
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    border: 1px solid #E5E5E5;
+    img {
+        width: 16px;
+        height: 16px;
+    }
+}
+.footer__right {
+    flex-grow: 7;
+    display: flex;
+}
+.footer__services {
+    flex-grow: 2;
+}
+.footer__label {
+    display: inline-block;
+    font-family: 'IBM', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 24px;
+}
+.footer__menu {
+}
+.footer__list {
+    margin-bottom: 16px;
+    &:last-child {
+        margin: 0;
+    }
+}
+.footer__link {
+    font-family: 'IBM', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #4B4B4B;
+    text-decoration: none;
+}
+.footer__company {
+    flex-grow: 2;
+}
+.footer__contacts {
+    flex-grow: 3;
+}
+.footer__bot {
+    margin-top: 32px;
+    display: flex;
+    .info {
+        flex-grow: 5;
+    }
+    .dopamin {
+        flex-grow: 1;
+        span {
+            color: #000;
+        }
+    }
+    .politics {
+        flex-grow: 6;
+    }
+}
+
+.footer__text {
+    font-family: 'IBM', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #7D7D7D;
+}

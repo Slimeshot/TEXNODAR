@@ -1,0 +1,21 @@
+.media {
+    padding-bottom: 120px;
+}
+
+.media__content {
+}
+.media__top {
+    margin-bottom: 32px;
+}
+.media__title {
+}
+
+.media__bot {
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 16%;
+        height: auto;
+        object-fit: cover;
+    }
+}
