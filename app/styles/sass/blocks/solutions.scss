@@ -1,0 +1,116 @@
+.solutions {
+    padding: 120px 0;
+    background-color: #FAF9F5;
+}
+
+.solutions__content {
+    display: flex;
+}
+.solutions__left {
+    width: 30%;
+}
+.solutions__title {
+}
+.solutions__right {
+    width: 70%;
+}
+.solutions__sheep {
+    margin-bottom: 120px;
+}
+.solutions__subtitle {
+    font-family: 'Normalidad', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 32px;
+
+}
+.solutions__section {
+    display: flex;
+    border-bottom: 1px solid #CBCBCB;
+    padding: 32px 0;
+    &:last-child {
+        border: none;
+    }
+}
+.solutions__params {
+    width: 25%;
+    font-family: 'IBM', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #7D7D7D;
+    
+}
+.solutions__info {
+    width: 75%;
+}
+.solutions__button {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-family: 'IBM', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    background-color: transparent;
+    border: 1px solid #CBCBCB;
+    margin-right: 12px;
+}
+
+.solutions__button.active {
+    background-color: $accent;
+    color: #fff;
+    border: none;
+}
+
+.solutions__menu {
+}
+.solutions__list {
+    margin-bottom: 32px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.solitions__denotation {
+    font-family: 'IBM', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 8px;
+}
+.solitions__description {
+    font-family: 'IBM', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #7D7D7D;
+}
+
+.solutions__btn {
+    background-color: $accent;
+    padding: 17px 34px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+
+.solution__block {
+    display: none;
+}
+
+

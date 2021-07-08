@@ -1,0 +1,76 @@
+<section class="calculator">
+    <div class="container">
+        <div class="calculator__wrapper">
+            <div class="row">
+                <div class="col-lg-3 col-xl-4">
+                    <div class="calculator__left">
+                        <div class="calculator__title title">Рассчитайте<br>свою экономию</div>
+                        <div class="calculator__subtitle">
+                            <p class="color-accent mb-md">3-6 месяца</p>
+                            <p class="color-base500">Средний срок окупаемости</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-xl-8">
+                    <form action="#" class="calculator__form form" method="POST">
+                        <div class="calculator__form-visible">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="form__select mb-md">
+                                        <select name="ship_type" id="">
+                                            <option value="1">Вид судна</option>
+                                            <option value="2">Буксирное судно</option>
+                                            <option value="3">Промышленое судно</option>
+                                            <option value="4">Грузовое Судно</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form__number mb-md">
+                                        <label for="formCount">Количество единиц</label>
+                                        <div class="form__number-wrapper">
+                                            <span data-number-control data-action="min" class="icon minus"></span>
+                                            <input type="number" name="count" id="formCount" value="1" min="1" required>
+                                            <span data-number-control data-action="plus" class="icon plus"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <input type="text" class="mb-md" name="month_delivery"
+                                        placeholder="Расстояние в месяц" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <input type="text" class="mb-md" name="price" placeholder="Стоимость за тонну"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="calculator__form-footer">
+                                        <div class="divider mt-md mb-xl"></div>
+                                        <button class="form__btn-primary mr-xl calculator_btn_next" role="button">Рассчитать</button>
+                                        <span class="mutted fs-md">
+                                            Оставляя заявку вы соглашаетесь на <a href="#" target="_blank">обработку
+                                                данных</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__form-hidden">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Спасибо за расчет!</h5>
+                                    <p class="mb-md mutted">Введите свой адрес электронной почты и мы вышлем на нее
+                                        результаты расчета!</p>
+                                    <input type="email" name="email" placeholder="example@example.ru" required>
+                                    <button class="form__btn-primary mt-md" role="submit">Отправить мне расчет</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

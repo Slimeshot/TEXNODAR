@@ -1,0 +1,51 @@
+.certificate {
+    padding: 120px 0;
+}
+
+.certificate__content {
+}
+.certificate__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+.certificate__controls {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    
+}
+.certificate__btn {
+    background-position: center;
+    background-size: 15%;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    border: 1px solid #E5E5E5;
+    cursor: pointer;
+}
+.certificate__btn-prev {
+    background-image: url(../images/dist/Icon/arrow-left-black.svg);
+}
+.certificate__btn-next {
+    background-image: url(../images/dist/Icon/arrow-right-black.svg);
+}
+.certificate__title {
+}
+
+.certificate__bot {
+}
+
+.certificate__swiper {
+}
+
+.certificate__slide {
+    border: 1px solid #E5E5E5;
+    border-radius: 16px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

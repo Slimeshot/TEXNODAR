@@ -1,0 +1,119 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    background-color: #FFFFFF;
+}
+.header__content {
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    flex-grow: 2; 
+    img {
+        width: 170px;
+    }
+}
+.header__navigation {
+    flex-grow: 6;
+}
+.header__contacts {
+    flex-grow: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__phone {
+    font-family: 'IBM', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+.header__btn {
+    padding: 12px 24px;
+    border: 1px solid #9FCCCB;
+    border-radius: 24px 8px;
+}
+.header__burger {
+    display: none;
+}
+
+
+
+@media (max-width: 1360px) {
+
+    .header__navigation {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -1000px;
+        left: 0;
+        .navigation__menu {
+            flex-direction: column;
+            align-items: center;
+        }
+        .navigation__list {
+            margin: 0;
+        }
+    }
+
+    .header__contacts {
+        justify-content: flex-end;
+        .header__phone {
+            margin-right: 24px;
+        }
+    }
+    .header__btn-menu {
+        flex-grow: 0.5;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__burger {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .line {
+            height: 3px;
+            width: 60%;
+            margin: 3px 0;
+            background-color: black;
+        }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .header__phone {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 540px) {
+    .header__btn {
+        padding: 9px 13px;
+        border-radius: 0px 0px
+    }
+    .header__logo {
+        img {
+            width: 100px;
+        }
+    }
+
+}
