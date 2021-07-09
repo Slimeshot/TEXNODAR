@@ -1,4 +1,5 @@
 import { Swiper, Parallax, Mousewheel, Controller, Pagination, Scrollbar, Navigation, Autoplay } from "swiper"
+import {Tab} from "bootstrap/js/dist/tab"
 
 Swiper.use([Parallax, Mousewheel, Controller, Pagination, Scrollbar, Navigation, Autoplay]);
 
@@ -138,60 +139,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-
-
-
-
-	let solutionBtn = document.querySelectorAll('.solutions__button-1');
-	let solutionBlock = document.querySelectorAll('.solution__block-1');
-
-
-	solutionBtn.forEach((item, index) => {
-		// console.log(index);
-		item.addEventListener('click', () => {
-			solutionBtn.forEach(elem => {
-				elem.classList.remove('active');
+	/*
+		let solutionBtn = document.querySelectorAll('.solutions__button-1');
+		let solutionBlock = document.querySelectorAll('.solution__block-1');
+	
+		solutionBtn.forEach((item, index) => {
+			// console.log(index);
+			item.addEventListener('click', () => {
+				solutionBtn.forEach(elem => {
+					elem.classList.remove('active');
+				})
+				solutionBlock.forEach((item, counter) => {
+					item.style.display = "none";
+					if (index === counter) {
+						item.style.display = "block";
+					}
+				})
+				item.classList.toggle('active');
 			})
-			solutionBlock.forEach((item, counter) => {
-				item.style.display = "none";
-				if (index === counter) {
-					item.style.display = "block";
-				}
-			})
-			item.classList.toggle('active');
+	
 		})
-
-	})
-
-
-	let solutionBtn2 = document.querySelectorAll('.solutions__button-2');
-	let solutionBlock2 = document.querySelectorAll('.solution__block-2');
-
-
-	solutionBtn2.forEach((item, index) => {
-		// console.log(index);
-		item.addEventListener('click', () => {
-			solutionBtn2.forEach(elem => {
-				elem.classList.remove('active');
+	
+		let solutionBtn2 = document.querySelectorAll('.solutions__button-2');
+		let solutionBlock2 = document.querySelectorAll('.solution__block-2');
+		solutionBtn2.forEach((item, index) => {
+			// console.log(index);
+			item.addEventListener('click', () => {
+				solutionBtn2.forEach(elem => {
+					elem.classList.remove('active');
+				})
+				solutionBlock2.forEach((item, counter) => {
+					item.style.display = "none";
+					if (index === counter) {
+						item.style.display = "block";
+					}
+				})
+				item.classList.toggle('active');
 			})
-			solutionBlock2.forEach((item, counter) => {
-				item.style.display = "none";
-				if (index === counter) {
-					item.style.display = "block";
-				}
-			})
-			item.classList.toggle('active');
+	
 		})
+		document.getElementById("defaultClick-1").click();
+		document.getElementById("defaultClick-2").click();
+	*/
 
-	})
-
-
-
-
-	document.getElementById("defaultClick-1").click();
-	document.getElementById("defaultClick-2").click();
+	/**
+	 *  Tabs JS
+	 */
 
 
 
@@ -221,25 +214,25 @@ document.addEventListener('DOMContentLoaded', () => {
 	/**
 	 *  Calculation form behavior
 	 */
-	var calcBtn = document.querySelector('.calculator__form .calculator_btn_next');
+	let calcBtn = document.querySelector('.calculator__form .calculator_btn_next');
 	calcBtn.addEventListener('click', (event) => {
-		
-		var fields = [].slice.call(document.querySelectorAll('.calculator__form-visible input, select'));
-		var isAllValid = true;
+
+		let fields = [].slice.call(document.querySelectorAll('.calculator__form-visible input, select'));
+		let isAllValid = true;
 
 		fields.map(function (filedElement) {
 			console.log(filedElement.validity.valid);
-			if(!filedElement.validity.valid)
+			if (!filedElement.validity.valid)
 				isAllValid = false;
 		})
 
-		if(isAllValid){
+		if (isAllValid) {
 			event.preventDefault();
-			var hiddenBlock = document.querySelector('.calculator__form .calculator__form-hidden');
+			let hiddenBlock = document.querySelector('.calculator__form .calculator__form-hidden');
 			hiddenBlock.classList.add('show');
 		}
 
-		
+
 
 	});
 })
